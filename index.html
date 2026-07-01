@@ -6,7 +6,7 @@
     <title>Royal Baccarat Club - Đẳng Cấp Thượng Lưu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; }
+        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
         .gold-text { color: #C5A059; }
         .luxury-card { background: rgba(20, 20, 20, 0.9); border: 1px solid #333; }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
@@ -18,18 +18,21 @@
 </head>
 <body>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('background.jpg'); background-size: cover; background-position: center;">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">ROYAL BACCARAT CLUB</h1>
-        <p class="text-xl italic">"11 năm kiến tạo giá trị đầu tư bền vững. Nơi hội tụ của sự tinh hoa."</p>
-    </section>
+    <section class="flex flex-col items-center justify-center text-center px-4 py-20" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('background.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
+        
+        <div class="mb-12 mt-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">ROYAL BACCARAT CLUB</h1>
+            <p class="text-xl italic text-gray-300">"11 năm kiến tạo giá trị đầu tư bền vững. Nơi hội tụ của sự tinh hoa."</p>
+        </div>
 
-    <section class="py-20 px-6 max-w-4xl mx-auto text-center border-b border-[#333]">
-        <h2 class="text-4xl gold-text mb-8">Triết Lý 11 Năm Bền Vững</h2>
-        <p class="text-lg text-gray-300 leading-relaxed mb-6">
-            Không phải ngẫu nhiên mà Royal Baccarat Club tồn tại vững chắc qua hơn một thập kỷ đầy biến động. 
-            Trong thế giới đầy rẫy sự may rủi, chúng tôi đứng vững nhờ hệ thống quản lý vốn nghiêm ngặt và tư duy toán học xác suất đỉnh cao. 
-            Tại đây, chúng tôi không "đánh bạc", chúng tôi "đầu tư" với lộ trình bài bản như những nhà toán học thực thụ.
-        </p>
+        <div class="max-w-4xl text-center bg-black/60 p-8 rounded-xl border border-[#C5A059]/50 shadow-2xl backdrop-blur-sm">
+            <h2 class="text-3xl gold-text mb-6">Triết Lý 11 Năm Bền Vững</h2>
+            <p class="text-lg text-gray-200 leading-relaxed">
+                Không phải ngẫu nhiên mà Royal Baccarat Club tồn tại vững chắc qua hơn một thập kỷ đầy biến động. 
+                Trong thế giới đầy rẫy sự may rủi, chúng tôi đứng vững nhờ hệ thống quản lý vốn nghiêm ngặt và tư duy toán học xác suất đỉnh cao. 
+                Tại đây, chúng tôi không "đánh bạc", chúng tôi "đầu tư" với lộ trình bài bản như những nhà toán học thực thụ.
+            </p>
+        </div>
     </section>
 
     <section class="py-16 px-4 max-w-4xl mx-auto">
@@ -47,7 +50,7 @@
         </div>
     </section>
 
-    <section class="py-20 overflow-hidden">
+    <section class="py-20 overflow-hidden border-t border-[#333]">
         <h2 class="text-4xl gold-text mb-4 text-center">Cộng Đồng 10.000+ Thành Viên</h2>
         <p class="text-gray-400 text-center mb-16">Những người tiên phong đã thay đổi cuộc đời tại đây</p>
         <div class="marquee flex gap-8">
@@ -119,7 +122,7 @@
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-[#333]">
+    <footer class="py-12 text-center border-t border-[#333]">
         <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black px-12 py-4 rounded-full font-bold hover:bg-white transition uppercase tracking-widest">Tham gia cộng đồng ngay</a>
     </footer>
 
