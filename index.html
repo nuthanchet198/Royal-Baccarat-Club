@@ -5,72 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Baccarat Club - Đẳng Cấp Thượng Lưu</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; margin: 0; }
-        .hero-bg { background-image: url('background.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; }
-        .overlay { background: rgba(0, 0, 0, 0.7); position: absolute; inset: 0; }
+        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; }
         .gold-text { color: #C5A059; }
         .luxury-card { background: rgba(20, 20, 20, 0.9); border: 1px solid #333; }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .marquee { display: flex; animation: scroll 120s linear infinite; width: fit-content; }
-        table { border-collapse: collapse; width: 100%; color: #C5A059; }
-        th, td { border: 1px solid #C5A059; padding: 12px; text-align: center; }
-        th { background: #1a1a1a; }
+        .marquee { display: flex; animation: scroll 150s linear infinite; width: fit-content; }
     </style>
 </head>
 <body>
 
     <!-- HERO SECTION -->
-    <section class="hero-bg">
-        <div class="overlay"></div>
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl mb-6 tracking-tight text-white font-bold">ROYAL BACCARAT CLUB</h1>
-            <p class="text-xl text-gray-300 italic max-w-xl mx-auto">"Chúng tôi không chơi, chúng tôi kiến tạo lại cuộc đời từ những con số."</p>
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('background.jpg'); background-size: cover; background-position: center;">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">ROYAL BACCARAT CLUB</h1>
+        <p class="text-xl italic">"Kiến tạo lại cuộc đời từ con số 0."</p>
+    </section>
+
+    <!-- SECTION 50 THÀNH VIÊN -->
+    <section class="py-20 overflow-hidden">
+        <h2 class="text-4xl gold-text mb-16 text-center">Cộng Đồng Thịnh Vượng (50+ Thành Viên)</h2>
+        <div class="marquee flex gap-8">
+            <script>
+                const data = [
+                    {n: "Minh Anh", q: "Từng nợ 1 tỷ, nhờ nhóm mà tôi đã trả hết sạch."},
+                    {n: "Lan Chi", q: "Biết đến nhóm là may mắn lớn nhất cuộc đời tôi."},
+                    {n: "Tuấn Vũ", q: "Kỷ luật là chìa khóa. Cảm ơn các anh em."},
+                    {n: "Hoàng Yến", q: "Từ lúc bế tắc nhất, nhóm đã cứu tôi."},
+                    {n: "Quốc Bảo", q: "Tư duy lãi kép ở đây thực sự quá đỉnh."},
+                    {n: "Thanh Thúy", q: "Không còn nợ nần, cuộc đời sang trang mới."},
+                    {n: "Hồng Đăng", q: "Nhóm cho tôi cách quản lý vốn an toàn."},
+                    {n: "Ngọc Mai", q: "Biết ơn vì được đồng hành cùng anh em."},
+                    {n: "Đức Thịnh", q: "May mắn vì gặp đúng người đúng thời điểm."},
+                    {n: "Bích Liên", q: "Mọi khó khăn đều đã qua, giờ là lúc tận hưởng."},
+                    {n: "Văn Hùng", q: "Chưa bao giờ thấy nhóm nào minh bạch như này."},
+                    {n: "Diệu Anh", q: "Đầu tư có lộ trình, không còn lo âu."},
+                    {n: "Việt Phong", q: "Cảm ơn vì đã không bỏ rơi người như tôi."},
+                    {n: "Mai Trang", q: "Cuộc sống ổn định hơn nhờ lộ trình của nhóm."},
+                    {n: "Trung Kiên", q: "Kỷ luật thép làm nên thành công."},
+                    {n: "Phương Linh", q: "Nhóm là mái nhà thứ 2 của tôi."},
+                    {n: "Tấn Tài", q: "May mắn khi được học tư duy từ nhóm."},
+                    {n: "Thu Hoài", q: "Đã vượt qua giai đoạn tồi tệ nhất."},
+                    {n: "Thế Vinh", q: "Giờ đây tôi đã tự chủ tài chính hoàn toàn."},
+                    {n: "Ánh Dương", q: "Chân thành cảm ơn sự dẫn dắt của CLB."},
+                    {n: "Gia Huy", q: "Đầu tư là phải bền vững, nhóm làm rất tốt."},
+                    {n: "Kim Ngân", q: "Thật lòng cảm ơn các anh em trong nhóm."},
+                    {n: "Đình Nam", q: "Đúng là lựa chọn sáng suốt nhất của tôi."},
+                    {n: "Thảo Vy", q: "Mọi thứ đã thay đổi 180 độ từ khi vào nhóm."},
+                    {n: "Xuân Trường", q: "Cảm ơn vì sự nhiệt tình của mọi người."},
+                    {n: "Nhã Phương", q: "Thoát cảnh nợ nần, lòng nhẹ nhàng hẳn."},
+                    {n: "Thành Đạt", q: "Tư duy xác suất ở đây là đỉnh cao."},
+                    {n: "Hải Yến", q: "Nhóm là hy vọng duy nhất của tôi khi đó."},
+                    {n: "Bình Minh", q: "Cảm ơn nhóm vì những bài học quý giá."},
+                    {n: "Tú Quyên", q: "Vượt qua nghịch cảnh nhờ sự giúp đỡ này."},
+                    {n: "Minh Triết", q: "Đẳng cấp là mãi mãi. Cảm ơn CLB."},
+                    {n: "Thanh Trúc", q: "Cuộc đời đã sang trang mới thật rồi."},
+                    {n: "Hoàng Nam", q: "Thật may khi được là thành viên của nhóm."},
+                    {n: "Minh Tâm", q: "Nhóm đã giúp tôi tìm lại chính mình."},
+                    {n: "Duy Mạnh", q: "Quản lý vốn là thứ tôi học được ở đây."},
+                    {n: "Thùy Linh", q: "Cảm ơn sự tận tâm của các anh em."},
+                    {n: "Phúc Lâm", q: "Đầu tư vào nhóm là khoản đầu tư tốt nhất."},
+                    {n: "Khánh Huyền", q: "May mắn thay, tôi đã không bỏ cuộc."},
+                    {n: "Minh Hiếu", q: "Mọi khó khăn đều đã được giải quyết."},
+                    {n: "Hồng Ngọc", q: "Sự minh bạch là điều tôi quý trọng nhất."},
+                    {n: "Vĩnh Khang", q: "Cảm ơn sự đồng hành của mọi người."},
+                    {n: "Tường Vi", q: "Cuộc sống của tôi thực sự đã đổi thay."},
+                    {n: "Quang Hải", q: "Tư duy này thật sự quá xuất sắc."},
+                    {n: "Kim Tuyến", q: "Biết ơn CLB vì tất cả mọi điều."},
+                    {n: "Đức Anh", q: "Nhóm giúp tôi đứng vững trên đôi chân mình."},
+                    {n: "Thanh Hà", q: "Cảm ơn vì đã luôn hỗ trợ tôi."},
+                    {n: "Minh Quân", q: "Đã tìm thấy ánh sáng cuối con đường."},
+                    {n: "Lan Anh", q: "Sự nhiệt tình làm tôi rất cảm động."},
+                    {n: "Tiến Dũng", q: "Đầu tư cùng nhóm thật sự an tâm."},
+                    {n: "Hải Anh", q: "Mọi điều tốt đẹp đều bắt đầu từ đây."}
+                ];
+
+                for(let i=0; i<100; i++) { // Loop 100 lần để chạy mượt
+                    let m = data[i % 50];
+                    document.write(`
+                        <div class="luxury-card p-6 w-72 shrink-0 rounded-xl text-center">
+                            <img src="tv${(i % 50) + 1}.jpg" class="w-20 h-20 rounded-full border-2 border-[#C5A059] mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-lg mb-2">${m.n}</h4>
+                            <p class="text-[#C5A059] text-sm italic">"${m.q}"</p>
+                        </div>
+                    `);
+                }
+            </script>
         </div>
     </section>
 
-    <!-- GIỚI THIỆU -->
-    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl gold-text mb-8">11 Năm Hành Trình Vững Chãi</h2>
-        <p class="text-lg text-gray-300 leading-relaxed">Từ những ngày đầu bế tắc, chúng tôi đã chứng minh: Thành công là kết quả của kỷ luật thép. Royal Baccarat Club không phải điểm đến của may rủi, mà là nơi hiện thực hóa tự do tài chính.</p>
-    </section>
-
-    <!-- DANH SÁCH 50 THÀNH VIÊN (CHẠY NGANG) -->
-    <section class="py-10 overflow-hidden">
-        <h2 class="text-3xl gold-text mb-10 text-center">Cộng Đồng Thịnh Vượng</h2>
-        <div class="marquee">
-            <div class="flex gap-8 px-4">
-                <!-- Vòng lặp giả lập 50 thành viên -->
-                <script>
-                    for(let i=1; i<=50; i++) {
-                        document.write(`<div class="text-center w-32 shrink-0">
-                            <img src="thanhvien1.jpg" class="w-20 h-20 rounded-full border-2 border-[#C5A059] mx-auto mb-2 object-cover">
-                            <span class="text-sm">TV ${i}</span>
-                        </div>`);
-                    }
-                </script>
-            </div>
-        </div>
-    </section>
-
-    <!-- BẢNG TĂNG TRƯỞNG -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <h2 class="text-3xl gold-text mb-8 text-center">Lộ Trình Đầu Tư</h2>
-        <div class="overflow-x-auto">
-            <table>
-                <thead><tr><th>NGÀY</th><th>VỐN GỐC</th><th>LỢI NHUẬN</th></tr></thead>
-                <tbody>
-                    <tr><td>1</td><td>10.000.000</td><td>4.000.000</td></tr>
-                    <tr><td>15</td><td>1.111.200.684</td><td>444.480.274</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer class="py-10 text-center border-t border-[#333]">
-        <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black font-bold px-8 py-3 rounded-full uppercase tracking-widest">Tham gia ngay</a>
+        <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black px-10 py-4 rounded-full font-bold">THAM GIA NGAY</a>
     </footer>
 
 </body>
