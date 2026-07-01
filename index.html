@@ -8,97 +8,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; margin: 0; }
-        
-        /* Tối ưu hình nền cho cả di động và máy tính */
-        .hero-bg {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        /* Lớp phủ đen để chữ dễ đọc */
-        .overlay { background: rgba(0, 0, 0, 0.65); position: absolute; inset: 0; }
-        
-        h1, h2 { font-family: 'Playfair Display', serif; }
+        .hero-bg { background-image: url('background.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; }
+        .overlay { background: rgba(0, 0, 0, 0.7); position: absolute; inset: 0; }
         .gold-text { color: #C5A059; }
-        .luxury-card { background: rgba(20, 20, 20, 0.9); border: 1px solid #333; transition: 0.3s; }
-        .luxury-card:hover { border-color: #C5A059; }
-        
+        .luxury-card { background: rgba(20, 20, 20, 0.9); border: 1px solid #333; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .marquee { display: flex; animation: scroll 120s linear infinite; width: fit-content; }
         table { border-collapse: collapse; width: 100%; color: #C5A059; }
         th, td { border: 1px solid #C5A059; padding: 12px; text-align: center; }
         th { background: #1a1a1a; }
     </style>
 </head>
-<body class="text-white">
+<body>
 
     <!-- HERO SECTION -->
     <section class="hero-bg">
         <div class="overlay"></div>
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl mb-6 tracking-tight text-white">ROYAL BACCARAT CLUB</h1>
-            <p class="text-xl text-gray-300 italic max-w-xl mx-auto">"Chúng tôi không chỉ chơi, chúng tôi kiến tạo lại cuộc đời từ những con số."</p>
+            <h1 class="text-5xl md:text-7xl mb-6 tracking-tight text-white font-bold">ROYAL BACCARAT CLUB</h1>
+            <p class="text-xl text-gray-300 italic max-w-xl mx-auto">"Chúng tôi không chơi, chúng tôi kiến tạo lại cuộc đời từ những con số."</p>
         </div>
     </section>
 
     <!-- GIỚI THIỆU -->
     <section class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl gold-text mb-8">11 Năm Một Hành Trình Kiến Tạo</h2>
-        <p class="text-lg text-gray-300 leading-relaxed mb-6">
-            11 năm trước, chúng tôi chỉ là những con người với đôi bàn tay trắng, mang trong mình sự trăn trở lớn lao về tài chính. Đã có những giai đoạn tưởng chừng như bế tắc hoàn toàn, những đêm mất phương hướng. Nhưng chính từ đáy của sự khó khăn, chúng tôi đã tìm thấy ánh sáng: <strong>Thành công thực sự không đến từ sự may mắn mù quáng, mà đến từ kỷ luật thép và tư duy xác suất.</strong>
-        </p>
-        <p class="text-lg text-gray-300 leading-relaxed">
-            Hôm nay, Royal Baccarat Club không đơn thuần là một cộng đồng, mà là nơi hiện thực hóa giấc mơ tự do tài chính. Chúng tôi biến những con số vô hồn trở thành lộ trình bền vững, giúp bạn đi từ con số âm đến sự thịnh vượng.
-        </p>
+        <h2 class="text-4xl gold-text mb-8">11 Năm Hành Trình Vững Chãi</h2>
+        <p class="text-lg text-gray-300 leading-relaxed">Từ những ngày đầu bế tắc, chúng tôi đã chứng minh: Thành công là kết quả của kỷ luật thép. Royal Baccarat Club không phải điểm đến của may rủi, mà là nơi hiện thực hóa tự do tài chính.</p>
     </section>
 
-    <!-- THÀNH VIÊN TIÊU BIỂU -->
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-4xl gold-text mb-16 text-center">Tiếng Nói Từ Những Người Hồi Sinh</h2>
-        <div class="grid md:grid-cols-2 gap-10">
-            <!-- Testimonial 1 -->
-            <div class="luxury-card p-8 rounded-lg">
-                <p class="text-gray-300 italic mb-6">"Khoảng thời gian nợ gần 1 tỷ đồng là lúc tôi muốn buông xuôi nhất. Thật may mắn khi biết đến nhóm. Những bài học về kỷ luật và quản lý vốn ở đây đã cứu lấy cuộc đời tôi, giúp tôi trả hết nợ và bắt đầu lại từ đầu."</p>
-                <div class="flex items-center">
-                    <img src="thanhvien1.jpg" alt="Thành viên" class="w-16 h-16 rounded-full border border-[#C5A059] object-cover">
-                    <div class="ml-4"><h4 class="font-bold">Anh Minh (TP.HCM)</h4><span class="text-[#C5A059] text-sm">Thành viên từ 2022</span></div>
-                </div>
-            </div>
-            <!-- Testimonial 2 -->
-            <div class="luxury-card p-8 rounded-lg">
-                <p class="text-gray-300 italic mb-6">"Cuộc sống bế tắc, quay cuồng trong vòng xoáy tài chính là những gì tôi từng trải qua. Nhưng tại CLB, mọi thứ đã thay đổi hoàn toàn. Tư duy đầu tư ở đây thực sự khác biệt, nó biến mọi khó khăn thành bài học tăng trưởng."</p>
-                <div class="flex items-center">
-                    <img src="thanhvien2.jpg" alt="Thành viên" class="w-16 h-16 rounded-full border border-[#C5A059] object-cover">
-                    <div class="ml-4"><h4 class="font-bold">Chị Lan (Hà Nội)</h4><span class="text-[#C5A059] text-sm">Thành viên từ 2023</span></div>
-                </div>
+    <!-- DANH SÁCH 50 THÀNH VIÊN (CHẠY NGANG) -->
+    <section class="py-10 overflow-hidden">
+        <h2 class="text-3xl gold-text mb-10 text-center">Cộng Đồng Thịnh Vượng</h2>
+        <div class="marquee">
+            <div class="flex gap-8 px-4">
+                <!-- Vòng lặp giả lập 50 thành viên -->
+                <script>
+                    for(let i=1; i<=50; i++) {
+                        document.write(`<div class="text-center w-32 shrink-0">
+                            <img src="thanhvien1.jpg" class="w-20 h-20 rounded-full border-2 border-[#C5A059] mx-auto mb-2 object-cover">
+                            <span class="text-sm">TV ${i}</span>
+                        </div>`);
+                    }
+                </script>
             </div>
         </div>
     </section>
 
     <!-- BẢNG TĂNG TRƯỞNG -->
-    <section class="py-16 px-4 max-w-5xl mx-auto">
-        <h2 class="text-3xl gold-text mb-10 text-center">Lộ Trình Tăng Trưởng 15 Ngày</h2>
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl gold-text mb-8 text-center">Lộ Trình Đầu Tư</h2>
         <div class="overflow-x-auto">
             <table>
-                <thead><tr><th>NGÀY</th><th>VỐN KHỞI ĐIỂM</th><th>LỢI NHUẬN 40%</th><th>TỔNG LỢI NHUẬN</th></tr></thead>
+                <thead><tr><th>NGÀY</th><th>VỐN GỐC</th><th>LỢI NHUẬN</th></tr></thead>
                 <tbody>
-                    <tr><td>1</td><td>10.000.000</td><td>4.000.000</td><td>14.000.000</td></tr>
-                    <tr><td>5</td><td>38.416.000</td><td>15.366.400</td><td>53.782.400</td></tr>
-                    <tr><td>10</td><td>206.610.468</td><td>82.644.187</td><td>289.254.655</td></tr>
-                    <tr><td>15</td><td>1.111.200.684</td><td>444.480.274</td><td>1.555.680.958</td></tr>
+                    <tr><td>1</td><td>10.000.000</td><td>4.000.000</td></tr>
+                    <tr><td>15</td><td>1.111.200.684</td><td>444.480.274</td></tr>
                 </tbody>
             </table>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-20 text-center border-t border-[#333]">
-        <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black font-bold px-12 py-4 hover:bg-white transition uppercase tracking-widest rounded-full">Tham gia cộng đồng ngay</a>
+    <footer class="py-10 text-center border-t border-[#333]">
+        <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black font-bold px-8 py-3 rounded-full uppercase tracking-widest">Tham gia ngay</a>
     </footer>
 
 </body>
