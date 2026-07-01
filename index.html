@@ -7,71 +7,67 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background: #000; color: #fff; }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; margin: 0; }
+        
+        /* Cấu hình hình nền */
+        .hero-bg {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        /* Lớp phủ đen để làm nổi bật chữ */
+        .overlay { background: rgba(0, 0, 0, 0.75); }
+        
         h1, h2 { font-family: 'Playfair Display', serif; }
         .gold-text { color: #C5A059; }
-        .luxury-card { background: #0a0a0a; border: 1px solid #333; transition: 0.3s; }
-        .luxury-card:hover { border-color: #C5A059; transform: translateY(-10px); }
-        table { border-collapse: collapse; width: 100%; color: #C5A059; }
-        th, td { border: 1px solid #C5A059; padding: 15px; text-align: center; }
-        th { background: #1a1a1a; }
+        .luxury-card { background: rgba(20, 20, 20, 0.9); border: 1px solid #333; transition: 0.3s; }
+        .luxury-card:hover { border-color: #C5A059; }
     </style>
 </head>
-<body>
+<body class="text-white">
 
-    <section class="h-[60vh] flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl md:text-7xl mb-6 tracking-tight">ROYAL BACCARAT CLUB</h1>
-        <p class="text-xl text-gray-400 italic max-w-xl">11 năm kiến tạo vị thế, vững bước cùng những nhà đầu tư thông thái.</p>
+    <section class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="overlay absolute inset-0"></div>
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl mb-6 tracking-tight text-white">ROYAL BACCARAT CLUB</h1>
+            <p class="text-xl text-gray-300 italic mb-10">"Chúng tôi không chỉ chơi, chúng tôi kiến tạo lại cuộc đời từ những con số."</p>
+        </div>
     </section>
 
     <section class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl gold-text mb-8">Triết Lý 11 Năm Bền Vững</h2>
+        <h2 class="text-4xl gold-text mb-8">11 Năm Một Hành Trình</h2>
         <p class="text-lg text-gray-300 leading-relaxed mb-6">
-            Không phải ngẫu nhiên mà Royal Baccarat Club tồn tại vững chắc qua hơn một thập kỷ đầy biến động. Chúng tôi tin rằng đầu tư không phải là cuộc chơi may rủi, mà là **bộ môn của kỷ luật và xác suất**. 
+            11 năm trước, chúng tôi bắt đầu với hai bàn tay trắng và một nỗi trăn trở về tài chính. Đã có những đêm mất trắng, những lần tưởng chừng như không còn đường lui. Nhưng chính trong thời điểm khó khăn nhất, chúng tôi nhận ra: <strong>Thành công không đến từ may mắn, mà từ kỷ luật thép.</strong>
         </p>
         <p class="text-lg text-gray-300 leading-relaxed">
-            Trong suốt 11 năm qua, chúng tôi đã xây dựng một hệ thống quản lý vốn nghiêm ngặt, biến những con số vô hồn thành lộ trình tài chính rõ ràng cho hàng ngàn thành viên. Tại đây, chúng tôi không "đánh bạc", chúng tôi "đầu tư" với tư duy của những nhà toán học thực thụ.
+            Hôm nay, Royal Baccarat Club không chỉ là một cộng đồng, mà là nơi bạn tìm thấy giải pháp thực sự. Chúng tôi biến những con số vô hồn trở thành lộ trình tự do tài chính bền vững.
         </p>
     </section>
 
     <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-4xl gold-text mb-16 text-center">Những Người Tiên Phong</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="luxury-card p-6 text-center">
-                <img src="thanhvien1.jpg" alt="Thành viên" class="w-32 h-32 mx-auto rounded-full mb-6 border-2 border-[#C5A059]">
-                <h3 class="text-xl font-bold text-white mb-2">Mr. Hoàng Anh</h3>
-                <p class="text-[#C5A059] italic mb-4">"Từ một người nợ nần, tôi đã tái cấu trúc tài chính nhờ kỷ luật của CLB."</p>
+        <h2 class="text-4xl gold-text mb-16 text-center">Lời Chứng Thực Từ Những Người Đã Thay Đổi</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="luxury-card p-8 rounded-lg">
+                <p class="text-gray-300 italic mb-6">"Tôi từng ôm khoản nợ gần 1 tỷ đồng, cuộc sống bế tắc hoàn toàn. Nhóm này không chỉ cho tôi tiền, mà cho tôi cách tư duy để trả nợ và xây dựng lại cuộc đời từ số vốn nhỏ nhất."</p>
+                <div class="flex items-center">
+                    <img src="thanhvien1.jpg" alt="Member" class="w-16 h-16 rounded-full border border-[#C5A059]">
+                    <div class="ml-4"><h4 class="font-bold">Anh Minh (TP.HCM)</h4><span class="text-[#C5A059] text-sm">Đầu tư từ năm 2022</span></div>
+                </div>
             </div>
-            <div class="luxury-card p-6 text-center">
-                <img src="thanhvien2.jpg" alt="Thành viên" class="w-32 h-32 mx-auto rounded-full mb-6 border-2 border-[#C5A059]">
-                <h3 class="text-xl font-bold text-white mb-2">Ms. Minh Tú</h3>
-                <p class="text-[#C5A059] italic mb-4">"11 năm là con số biết nói. Sự minh bạch ở đây là điều tôi trân trọng nhất."</p>
+            <div class="luxury-card p-8 rounded-lg">
+                <p class="text-gray-300 italic mb-6">"May mắn lớn nhất cuộc đời tôi là gặp được CLB vào lúc tuyệt vọng nhất. Những bài học về quản lý vốn ở đây không nơi nào có được. Từ con số âm, tôi đã tự tin về tài chính."</p>
+                <div class="flex items-center">
+                    <img src="thanhvien2.jpg" alt="Member" class="w-16 h-16 rounded-full border border-[#C5A059]">
+                    <div class="ml-4"><h4 class="font-bold">Chị Lan (Hà Nội)</h4><span class="text-[#C5A059] text-sm">Đầu tư từ năm 2023</span></div>
+                </div>
             </div>
-            <div class="luxury-card p-6 text-center">
-                <img src="thanhvien3.jpg" alt="Thành viên" class="w-32 h-32 mx-auto rounded-full mb-6 border-2 border-[#C5A059]">
-                <h3 class="text-xl font-bold text-white mb-2">Mr. Đức Duy</h3>
-                <p class="text-[#C5A059] italic mb-4">"Đầu tư không vội vàng. Cảm ơn cộng đồng đã dạy tôi tư duy lãi kép."</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 px-4 max-w-5xl mx-auto">
-        <h2 class="text-3xl gold-text mb-10 text-center">Lộ Trình Tăng Trưởng 15 Ngày</h2>
-        <div class="overflow-x-auto">
-            <table>
-                <thead><tr><th>NGÀY</th><th>VỐN KHỞI ĐIỂM</th><th>LỢI NHUẬN 40%</th><th>TỔNG LỢI NHUẬN</th></tr></thead>
-                <tbody>
-                    <tr><td>1</td><td>10.000.000</td><td>4.000.000</td><td>14.000.000</td></tr>
-                    <tr><td>5</td><td>38.416.000</td><td>15.366.400</td><td>53.782.400</td></tr>
-                    <tr><td>10</td><td>206.610.468</td><td>82.644.187</td><td>289.254.655</td></tr>
-                    <tr><td>15</td><td>1.111.200.684</td><td>444.480.274</td><td>1.555.680.958</td></tr>
-                </tbody>
-            </table>
         </div>
     </section>
 
     <footer class="py-20 text-center border-t border-[#333]">
-        <a href="https://t.me/your_telegram_link" class="inline-block border border-white px-10 py-3 hover:bg-white hover:text-black transition uppercase tracking-widest">Liên hệ tham gia ngay</a>
+        <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black font-bold px-12 py-4 hover:bg-white transition uppercase tracking-widest rounded-full">Tham gia cộng đồng ngay</a>
     </footer>
 
 </body>
