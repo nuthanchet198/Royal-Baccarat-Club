@@ -12,8 +12,10 @@
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .marquee { display: flex; animation: scroll 150s linear infinite; width: fit-content; }
         table { border-collapse: collapse; width: 100%; color: #C5A059; }
-        th, td { border: 1px solid #C5A059; padding: 12px; text-align: center; }
-        th { background: #1a1a1a; }
+        th, td { border: 1px solid #333; padding: 14px 12px; text-align: center; font-size: 0.95rem; }
+        th { background: #111; color: #C5A059; font-weight: 700; text-transform: uppercase; border-bottom: 2px solid #C5A059; }
+        tr:nth-child(even) { background: rgba(15, 15, 15, 0.6); }
+        .milestone { background: rgba(197, 160, 89, 0.15) !important; font-weight: bold; color: #fff; border: 1px solid #C5A059; }
     </style>
 </head>
 <body>
@@ -36,20 +38,116 @@
         </div>
     </section>
 
-    <!-- 2. BẢNG LỘ TRÌNH ĐẦU TƯ -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <h2 class="text-3xl gold-text mb-8 text-center">Lộ Trình Đầu Tư 15 Ngày</h2>
-        <div class="overflow-x-auto">
+    <!-- 2. BẢNG LỘ TRÌNH ĐẦU TƯ CHI TIẾT 15 NGÀY (ĐÃ NÂNG CẤP) -->
+    <section class="py-16 px-4 max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold gold-text mb-2 text-center uppercase tracking-wide">Kế Hoạch Tăng Trưởng Lãi Kép 40%/Ngày</h2>
+        <p class="text-gray-400 text-center mb-10 text-sm md:text-base">Lộ trình vận hành dòng vốn thông minh, cam kết kỷ luật bảo toàn vốn tuyệt đối</p>
+        
+        <div class="overflow-x-auto rounded-xl border border-[#C5A059]/30 shadow-2xl">
             <table>
-                <thead><tr><th>NGÀY</th><th>VỐN GỐC</th><th>LỢI NHUẬN (40%)</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th class="w-20">Ngày</th>
+                        <th>Vốn Khởi Điểm (VND)</th>
+                        <th>Lợi Nhuận Mục Tiêu (40%)</th>
+                        <th>Tổng Cuối Ngày (Cộng Dồn)</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr><td>1</td><td>10.000.000</td><td>4.000.000</td></tr>
-                    <tr><td>5</td><td>38.416.000</td><td>15.366.400</td></tr>
-                    <tr><td>10</td><td>206.610.468</td><td>82.644.187</td></tr>
-                    <tr><td>15</td><td>1.111.200.684</td><td>444.480.274</td></tr>
+                    <tr class="milestone">
+                        <td>Ngày 1</td>
+                        <td>10.000.000</td>
+                        <td class="gold-text">+4.000.000</td>
+                        <td>14.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 2</td>
+                        <td>14.000.000</td>
+                        <td class="gold-text">+5.600.000</td>
+                        <td>19.600.000</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 3</td>
+                        <td>19.600.000</td>
+                        <td class="gold-text">+7.840.000</td>
+                        <td>27.440.000</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 4</td>
+                        <td>27.440.000</td>
+                        <td class="gold-text">+10.976.000</td>
+                        <td>38.416.000</td>
+                    </tr>
+                    <tr class="milestone">
+                        <td>Ngày 5</td>
+                        <td>38.416.000</td>
+                        <td class="gold-text">+15.366.400</td>
+                        <td>53.782.400</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 6</td>
+                        <td>53.782.400</td>
+                        <td class="gold-text">+21.512.960</td>
+                        <td>75.295.360</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 7</td>
+                        <td>75.295.360</td>
+                        <td class="gold-text">+30.118.144</td>
+                        <td>105.413.504</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 8</td>
+                        <td>105.413.504</td>
+                        <td class="gold-text">+42.165.402</td>
+                        <td>147.578.906</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 9</td>
+                        <td>147.578.906</td>
+                        <td class="gold-text">+59.031.562</td>
+                        <td>206.610.468</td>
+                    </tr>
+                    <tr class="milestone">
+                        <td>Ngày 10</td>
+                        <td>206.610.468</td>
+                        <td class="gold-text">+82.644.187</td>
+                        <td>289.254.655</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 11</td>
+                        <td>289.254.655</td>
+                        <td class="gold-text">+115.701.862</td>
+                        <td>404.956.517</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 12</td>
+                        <td>404.956.517</td>
+                        <td class="gold-text">+161.982.607</td>
+                        <td>566.939.124</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 13</td>
+                        <td>566.939.124</td>
+                        <td class="gold-text">+226.775.650</td>
+                        <td>793.714.774</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày 14</td>
+                        <td>793.714.774</td>
+                        <td class="gold-text">+317.485.910</td>
+                        <td>1.111.200.684</td>
+                    </tr>
+                    <tr class="milestone text-yellow-400 shadow-lg">
+                        <td>Ngày 15</td>
+                        <td>1.111.200.684</td>
+                        <td class="text-yellow-400 font-black">+444.480.274</td>
+                        <td class="text-yellow-400 font-black underline decoration-double">1.555.680.958</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
+        <p class="text-xs text-gray-500 italic mt-3 text-center">* Lưu ý: Lộ trình trên áp dụng công thức lãi kép chuẩn với điều kiện thành viên tuân thủ đúng 100% lệnh đi của Trưởng nhóm, không tự ý bẻ cầu, không tham lam quá mục tiêu.</p>
     </section>
 
     <!-- 3. CỘNG ĐỒNG THÀNH VIÊN -->
@@ -57,7 +155,6 @@
         <h2 class="text-4xl gold-text mb-4 text-center">Cộng Đồng Thịnh Vượng (20.000+ Thành Viên)</h2>
         <p class="text-gray-400 text-center mb-16">Những người tiên phong đã thay đổi cuộc đời tại đây</p>
         
-        <!-- Vùng chứa danh sách ảnh chạy (Đã sửa đổi để nạp dữ liệu bằng JS an toàn) -->
         <div id="marqueeContainer" class="marquee flex gap-8"></div>
     </section>
 
@@ -72,7 +169,6 @@
     <div id="registerModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm flex items-center justify-center z-50 hidden">
         <div class="bg-[#111] p-8 rounded-2xl max-w-md w-full mx-4 border-2 border-[#C5A059] shadow-2xl relative">
             
-            <!-- Nút đóng bảng -->
             <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl cursor-pointer">&times;</button>
 
             <!-- BƯỚC 1: ĐIỀN THÔNG TIN KHI ẤN ĐĂNG KÝ -->
@@ -95,7 +191,7 @@
                 </form>
             </div>
 
-            <!-- BƯỚC 2: HIỆN 3 LINK TELEGRAM SAU KHI BẤM XÁC NHẬN -->
+            <!-- BƯỚC 2: HIỆN 3 LINK TELEGRAM -->
             <div id="stepLinks" class="hidden">
                 <div class="text-center mb-6">
                     <div class="w-12 h-12 bg-green-900/50 text-green-400 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">✓</div>
@@ -104,19 +200,16 @@
                 </div>
 
                 <div class="space-y-3">
-                    <!-- Link 1: Khang Mini  -->
                     <a href="https://t.me/KHANGMINI369" target="_blank" class="flex flex-col items-center justify-center bg-gradient-to-r from-[#222] to-[#1a1a1a] border border-[#C5A059]/40 p-3 rounded-xl hover:border-[#C5A059] hover:bg-[#1a1a1a] transition">
                         <span class="font-bold text-white text-base">KHANG MINI</span>
                         <span class="text-xs text-gray-400">Bấm để liên hệ ngay</span>
                     </a>
 
-                    <!-- Link 2: Thành Trưởng Nhóm -->
                     <a href="https://t.me/ThanhconIT" target="_blank" class="flex flex-col items-center justify-center bg-gradient-to-r from-[#222] to-[#1a1a1a] border border-[#C5A059]/40 p-3 rounded-xl hover:border-[#C5A059] hover:bg-[#1a1a1a] transition">
                         <span class="font-bold gold-text text-base">THÀNH ( TRƯỞNG NHÓM )</span>
                         <span class="text-xs text-gray-400">Bấm để liên hệ ngay</span>
                     </a>
 
-                    <!-- Link 3: Kiều Trinh -->
                     <a href="https://t.me/KieutrinhLeader" target="_blank" class="flex flex-col items-center justify-center bg-gradient-to-r from-[#222] to-[#1a1a1a] border border-[#C5A059]/40 p-3 rounded-xl hover:border-[#C5A059] hover:bg-[#1a1a1a] transition">
                         <span class="font-bold text-white text-base">KIỀU TRINH</span>
                         <span class="text-xs text-gray-400">Bấm để liên hệ ngay</span>
@@ -129,9 +222,7 @@
 
     <!-- SCRIPT KHỞI TẠO DATA VÀ XỬ LÝ LOGIC CHỐNG LỖI -->
     <script>
-        // Danh sách dữ liệu đồng bộ chuẩn xác 100% theo file ảnh image_93db6a.jpg
         const data = [
-            // HÀNG 1: tv (1) -> tv (10)
             {n: "Quốc Bảo", q: "Tư duy lãi kép ở đây thực sự quá đỉnh."},
             {n: "Thành Đạt", q: "Kỷ luật thép làm nên thành công rực rỡ."},
             {n: "Minh Thư", q: "Biết ơn vì cơ hội đổi đời tuyệt vời này."},
@@ -142,8 +233,6 @@
             {n: "Đức Anh", q: "Nhóm giúp tôi đứng vững trên đôi chân mình."},
             {n: "Thanh Thúy", q: "Không còn nợ nần, cuộc đời sang trang mới."},
             {n: "Tiến Dũng", q: "Đầu tư cùng nhóm thật sự rất an tâm."},
-
-            // HÀNG 2: tv (11) -> tv (20)
             {n: "Hoàng Yến", q: "Từ lúc bế tắc nhất, nhóm đã cứu đời tôi."},
             {n: "Trung Kiên", q: "Quản lý vốn chặt chẽ mới đem lại sự bền vững."},
             {n: "Mai Trang", q: "Cuộc sống ổn định hơn nhờ lộ trình của nhóm."},
@@ -154,8 +243,6 @@
             {n: "Hoàng Long", q: "Đội ngũ hỗ trợ quá nhiệt tình và chuyên nghiệp."},
             {n: "Thảo Vy", q: "Mọi thứ đã thay đổi 180 độ từ khi vào nhóm."},
             {n: "Thu Hoài", q: "Tôi đã hoàn toàn vượt qua giai đoạn tồi tệ nhất."},
-
-            // HÀNG 3: tv (21) -> tv (30)
             {n: "Tuấn Vũ", q: "Kỷ luật là chìa khóa vàng giúp tôi về bờ thành công."},
             {n: "Thế Vinh", q: "Giờ đây tôi đã tự chủ tài chính hoàn toàn."},
             {n: "Trúc Quỳnh", q: "Tin tưởng tuyệt đối vào lộ trình, quả ngọt sẽ đến."},
@@ -166,8 +253,6 @@
             {n: "Gia Huy", q: "Đầu tư là phải bền vững, nhóm làm quá tốt."},
             {n: "Hải Yến", q: "Nhóm là hy vọng duy nhất của tôi khi trắng tay."},
             {n: "Nhã Phương", q: "Thoát cảnh nợ nần, đầu óc giờ nhẹ nhàng hẳn."},
-
-            // HÀNG 4: tv (31) -> tv (40)
             {n: "Đức Thịnh", q: "May mắn vì gặp đúng người đúng thời điểm."},
             {n: "Xuân Trường", q: "Cảm ơn vì sự nhiệt tình hết mình của mọi người."},
             {n: "Sơn Tùng", q: "Kiếm tiền bền vững chứ không ăn xổi, quá uy tín."},
@@ -178,8 +263,6 @@
             {n: "Gia Bảo", q: "Bài học quản lý vốn áp dụng được cho mọi ngành nghề."},
             {n: "Vĩnh Khang", q: "Cảm ơn sự đồng hành chiến đấu của mọi người."},
             {n: "Kim Ngân", q: "Thật lòng cảm ơn các anh em trong nhóm."},
-
-            // HÀNG 5: tv (41) -> tv (50)
             {n: "Hoàng Nam", q: "Thật may khi được là một phần của câu lạc bộ."},
             {n: "Văn Tú", q: "Lựa chọn đúng quan trọng hơn nỗ lực mù quáng."},
             {n: "Tường Vi", q: "Cuộc sống của tôi thực sự đã đổi thay hoàn toàn."},
@@ -190,8 +273,6 @@
             {n: "Duy Mạnh", q: "Vào nhóm học hỏi giúp tôi trưởng thành hơn rất nhiều."},
             {n: "Thanh Hà", q: "Cảm ơn vì ban quản trị đã luôn hỗ trợ tôi đêm ngày."},
             {n: "Hải Anh", q: "Mọi điều tốt đẹp nhất đều bắt đầu từ khi tôi vào đây."},
-
-            // HÀNG 6: tv (51) -> tv (60)
             {n: "Quốc Khánh", q: "Đội nhóm kéo an toàn, lệnh đi cực kỳ chuẩn chỉ."},
             {n: "Tấn Tài", q: "Tài lộc dồi dào từ ngày biết đi theo các ca kéo vốn."},
             {n: "Mạnh Hùng", q: "Phương pháp chơi quá khoa học, không hề có tính may rủi."},
@@ -204,7 +285,6 @@
             {n: "Ánh Dương", q: "Chân thành cảm ơn sự dẫn dắt tài tình của các Trưởng Nhóm."}
         ];
 
-        // Dùng phương thức innerHTML an toàn để đẩy danh sách ảnh lên giao diện web
         const marqueeBox = document.getElementById('marqueeContainer');
         let marqueeHtml = '';
         for(let i = 0; i < 120; i++) {
@@ -219,25 +299,21 @@
         }
         marqueeBox.innerHTML = marqueeHtml;
 
-        // Hàm mở Popup bảng Đăng ký thành viên
         function openModal() {
             document.getElementById('registerModal').classList.remove('hidden');
             document.getElementById('stepForm').classList.remove('hidden');
             document.getElementById('stepLinks').classList.add('hidden');
         }
 
-        // Hàm đóng Popup
         function closeModal() {
             document.getElementById('registerModal').classList.add('hidden');
         }
 
-        // Hàm xử lý khi khách bấm Xác nhận đăng ký
         function submitData(e) {
             e.preventDefault();
             const name = document.getElementById('fullname').value;
             const phone = document.getElementById('phonenumber').value;
 
-            // Chỗ cấu hình Token Bot Telegram (Không có vẫn đổi bước bình thường)
             const TELEGRAM_BOT_TOKEN = 'ĐIỀN_TOKEN_BOT_VÀO_ĐÂY';
             const TELEGRAM_CHAT_ID = 'ĐIỀN_ID_CHAT_VÀO_ĐÂY';
             
@@ -250,7 +326,6 @@
                 });
             }
 
-            // Chuyển sang Bước 2: Ẩn Form, hiện 3 link Tele
             document.getElementById('stepForm').classList.add('hidden');
             document.getElementById('stepLinks').classList.remove('hidden');
         }
