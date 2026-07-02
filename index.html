@@ -18,12 +18,12 @@
 </head>
 <body>
 
-    <!-- 1. HERO & GIỚI THIỆU (GỘP CHUNG ĐỂ XÓA KHOẢNG TRỐNG) -->
+    <!-- 1. HERO & GIỚI THIỆU -->
     <section class="flex flex-col items-center justify-center text-center px-4 py-20" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('background.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
         
         <div class="mb-12 mt-10">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">ROYAL BACCARAT CLUB</h1>
-            <p class="text-xl italic text-gray-300">"11 năm kiến tạo giá trị đầu tư bền vững. Nơi hội tụ của sự tinh hoa."</p>
+            <p class="text-xl italic text-gray-300">"11 năm kiến tạo vị thế, vững bước cùng những nhà đầu tư thông thái."</p>
         </div>
 
         <div class="max-w-4xl text-center bg-black/60 p-8 rounded-xl border border-[#C5A059]/50 shadow-2xl backdrop-blur-sm">
@@ -52,70 +52,92 @@
         </div>
     </section>
 
-    <!-- 3. CỘNG ĐỒNG 10.000+ THÀNH VIÊN (CHẠY NGANG) -->
+    <!-- 3. CỘNG ĐỒNG THÀNH VIÊN (ĐÃ ĐỔI TÊN NAM/NỮ CHUẨN THEO ẢNH MỚI) -->
     <section class="py-20 overflow-hidden border-t border-[#333]">
-        <h2 class="text-4xl gold-text mb-4 text-center">Cộng Đồng 10.000+ Thành Viên</h2>
+        <h2 class="text-4xl gold-text mb-4 text-center">Cộng Đồng Thịnh Vượng (60 Thành Viên)</h2>
         <p class="text-gray-400 text-center mb-16">Những người tiên phong đã thay đổi cuộc đời tại đây</p>
         <div class="marquee flex gap-8">
             <script>
                 const data = [
-                    {n: "Minh Anh", q: "Từng nợ 1 tỷ, nhờ nhóm mà tôi đã trả hết sạch."},
-                    {n: "Lan Chi", q: "Biết đến nhóm là may mắn lớn nhất cuộc đời tôi."},
-                    {n: "Tuấn Vũ", q: "Kỷ luật là chìa khóa. Cảm ơn các anh em."},
-                    {n: "Hoàng Yến", q: "Từ lúc bế tắc nhất, nhóm đã cứu tôi."},
+                    // HÀNG 1: tv(1) -> tv(11)
                     {n: "Quốc Bảo", q: "Tư duy lãi kép ở đây thực sự quá đỉnh."},
-                    {n: "Thanh Thúy", q: "Không còn nợ nần, cuộc đời sang trang mới."},
-                    {n: "Hồng Đăng", q: "Nhóm cho tôi cách quản lý vốn an toàn."},
-                    {n: "Ngọc Mai", q: "Biết ơn vì được đồng hành cùng anh em."},
-                    {n: "Đức Thịnh", q: "May mắn vì gặp đúng người đúng thời điểm."},
-                    {n: "Bích Liên", q: "Mọi khó khăn đều đã qua, giờ là lúc tận hưởng."},
+                    {n: "Thành Đạt", q: "Kỷ luật thép làm nên thành công rực rỡ."},
+                    {n: "Minh Thư", q: "Biết ơn vì cơ hội đổi đời tuyệt vời này."},
+                    {n: "Hương Giang", q: "Cảm ơn nhóm đã kéo tôi ra khỏi vũng lầy."},
+                    {n: "Lan Chi", q: "Biết đến nhóm là may mắn lớn nhất cuộc đời tôi."},
                     {n: "Văn Hùng", q: "Chưa bao giờ thấy nhóm nào minh bạch như này."},
-                    {n: "Diệu Anh", q: "Đầu tư có lộ trình, không còn lo âu."},
-                    {n: "Việt Phong", q: "Cảm ơn vì đã không bỏ rơi người như tôi."},
-                    {n: "Mai Trang", q: "Cuộc sống ổn định hơn nhờ lộ trình của nhóm."},
-                    {n: "Trung Kiên", q: "Kỷ luật thép làm nên thành công."},
-                    {n: "Phương Linh", q: "Nhóm là mái nhà thứ 2 của tôi."},
-                    {n: "Tấn Tài", q: "May mắn khi được học tư duy từ nhóm."},
-                    {n: "Thu Hoài", q: "Đã vượt qua giai đoạn tồi tệ nhất."},
-                    {n: "Thế Vinh", q: "Giờ đây tôi đã tự chủ tài chính hoàn toàn."},
-                    {n: "Ánh Dương", q: "Chân thành cảm ơn sự dẫn dắt của CLB."},
-                    {n: "Gia Huy", q: "Đầu tư là phải bền vững, nhóm làm rất tốt."},
-                    {n: "Kim Ngân", q: "Thật lòng cảm ơn các anh em trong nhóm."},
-                    {n: "Đình Nam", q: "Đúng là lựa chọn sáng suốt nhất của tôi."},
-                    {n: "Thảo Vy", q: "Mọi thứ đã thay đổi 180 độ từ khi vào nhóm."},
-                    {n: "Xuân Trường", q: "Cảm ơn vì sự nhiệt tình của mọi người."},
-                    {n: "Nhã Phương", q: "Thoát cảnh nợ nần, lòng nhẹ nhàng hẳn."},
-                    {n: "Thành Đạt", q: "Tư duy xác suất ở đây là đỉnh cao."},
-                    {n: "Hải Yến", q: "Nhóm là hy vọng duy nhất của tôi khi đó."},
-                    {n: "Bình Minh", q: "Cảm ơn nhóm vì những bài học quý giá."},
-                    {n: "Tú Quyên", q: "Vượt qua nghịch cảnh nhờ sự giúp đỡ này."},
-                    {n: "Minh Triết", q: "Đẳng cấp là mãi mãi. Cảm ơn CLB."},
-                    {n: "Thanh Trúc", q: "Cuộc đời đã sang trang mới thật rồi."},
-                    {n: "Hoàng Nam", q: "Thật may khi được là thành viên của nhóm."},
-                    {n: "Minh Tâm", q: "Nhóm đã giúp tôi tìm lại chính mình."},
-                    {n: "Duy Mạnh", q: "Quản lý vốn là thứ tôi học được ở đây."},
-                    {n: "Thùy Linh", q: "Cảm ơn sự tận tâm của các anh em."},
-                    {n: "Phúc Lâm", q: "Đầu tư vào nhóm là khoản đầu tư tốt nhất."},
-                    {n: "Khánh Huyền", q: "May mắn thay, tôi đã không bỏ cuộc."},
-                    {n: "Minh Hiếu", q: "Mọi khó khăn đều đã được giải quyết."},
-                    {n: "Hồng Ngọc", q: "Sự minh bạch là điều tôi quý trọng nhất."},
-                    {n: "Vĩnh Khang", q: "Cảm ơn sự đồng hành của mọi người."},
-                    {n: "Tường Vi", q: "Cuộc sống của tôi thực sự đã đổi thay."},
-                    {n: "Quang Hải", q: "Tư duy này thật sự quá xuất sắc."},
-                    {n: "Kim Tuyến", q: "Biết ơn CLB vì tất cả mọi điều."},
+                    {n: "Minh Triết", q: "Đẳng cấp là mãi mãi. Cảm ơn CLB rất nhiều."},
                     {n: "Đức Anh", q: "Nhóm giúp tôi đứng vững trên đôi chân mình."},
-                    {n: "Thanh Hà", q: "Cảm ơn vì đã luôn hỗ trợ tôi."},
-                    {n: "Minh Quân", q: "Đã tìm thấy ánh sáng cuối con đường."},
-                    {n: "Lan Anh", q: "Sự nhiệt tình làm tôi rất cảm động."},
-                    {n: "Tiến Dũng", q: "Đầu tư cùng nhóm thật sự an tâm."},
-                    {n: "Hải Anh", q: "Mọi điều tốt đẹp đều bắt đầu từ đây."}
+                    {n: "Thanh Thúy", q: "Không còn nợ nần, cuộc đời sang trang mới."},
+                    {n: "Tiến Dũng", q: "Đầu tư cùng nhóm thật sự rất an tâm."},
+                    {n: "Hoàng Yến", q: "Từ lúc bế tắc nhất, nhóm đã cứu đời tôi."},
+
+                    // HÀNG 2: tv(12) -> tv(22)
+                    {n: "Trung Kiên", q: "Quản lý vốn chặt chẽ mới đem lại sự bền vững."},
+                    {n: "Mai Trang", q: "Cuộc sống ổn định hơn nhờ lộ trình của nhóm."},
+                    {n: "Bích Liên", q: "Mọi khó khăn đều đã qua, giờ là lúc gặt hái."},
+                    {n: "Diệu Anh", q: "Đầu tư có lộ trình rõ ràng, không còn lo âu."},
+                    {n: "Phương Linh", q: "Nhóm là mái nhà thứ hai nâng đỡ tôi lúc sụp đổ."},
+                    {n: "Ngọc Mai", q: "Biết ơn vì được đồng hành cùng tất cả anh em."},
+                    {n: "Hoàng Long", q: "Đội ngũ hỗ trợ quá nhiệt tình và chuyên nghiệp."},
+                    {n: "Thảo Vy", q: "Mọi thứ đã thay đổi 180 độ từ khi vào nhóm."},
+                    {n: "Thu Hoài", q: "Tôi đã hoàn toàn vượt qua giai đoạn tồi tệ nhất."},
+                    {n: "Tuấn Vũ", q: "Kỷ luật là chìa khóa vàng giúp tôi về bờ thành công."},
+                    {n: "Thế Vinh", q: "Giờ đây tôi đã tự chủ tài chính hoàn toàn."},
+
+                    // HÀNG 3: tv(23) -> tv(33)
+                    {n: "Trúc Quỳnh", q: "Tin tưởng tuyệt đối vào lộ trình, quả ngọt sẽ đến."},
+                    {n: "Minh Hiếu", q: "Mọi áp lực kinh tế đều đã được giải quyết gọn gàng."},
+                    {n: "Đình Nam", q: "Đúng là lựa chọn sáng suốt nhất của đời tôi."},
+                    {n: "Quang Hải", q: "Tư duy toán học xác suất ở đây thật sự quá xuất sắc."},
+                    {n: "Khánh Huyền", q: "May mắn thay, ngày đó tôi đã không bỏ cuộc."},
+                    {n: "Gia Huy", q: "Đầu tư là phải bền vững, nhóm làm quá tốt."},
+                    {n: "Hải Yến", q: "Nhóm là hy vọng duy nhất của tôi khi trắng tay."},
+                    {n: "Nhã Phương", q: "Thoát cảnh nợ nần, đầu óc giờ nhẹ nhàng hẳn."},
+                    {n: "Đức Thịnh", q: "May mắn vì gặp đúng người đúng thời điểm."},
+                    {n: "Xuân Trường", q: "Cảm ơn vì sự nhiệt tình hết mình của mọi người."},
+                    {n: "Sơn Tùng", q: "Kiếm tiền bền vững chứ không ăn xổi, quá uy tín."},
+
+                    // HÀNG 4: tv(34) -> tv(44)
+                    {n: "Hồng Đăng", q: "Nhóm cho tôi tư duy quản lý tài chính an toàn."},
+                    {n: "Minh Quân", q: "Đã tìm thấy ánh sáng cuối con đường hầm tăm tối."},
+                    {n: "Đăng Khoa", q: "Đầu tư có hội nhóm, tâm lý vững vàng hơn nhiều."},
+                    {n: "Thành Phong", q: "Đại gia đình tuyệt vời, cùng nhau đi lên."},
+                    {n: "Gia Bảo", q: "Bài học quản lý vốn áp dụng được cho mọi ngành nghề."},
+                    {n: "Vĩnh Khang", q: "Cảm ơn sự đồng hành chiến đấu của mọi người."},
+                    {n: "Kim Ngân", q: "Thật lòng cảm ơn các anh em trong nhóm."},
+                    {n: "Hoàng Nam", q: "Thật may khi được là một phần của câu lạc bộ."},
+                    {n: "Văn Tú", q: "Lựa chọn đúng quan trọng hơn nỗ lực mù quáng."},
+                    {n: "Tường Vi", q: "Cuộc sống của tôi thực sự đã đổi thay hoàn toàn."},
+                    {n: "Lan Anh", q: "Sự hỗ trợ nhiệt tình của đội ngũ làm tôi rất cảm động."},
+
+                    // HÀNG 5: tv(45) -> tv(55)
+                    {n: "Phúc Lâm", q: "Đầu tư vào nhóm là khoản đầu tư tốt nhất của tôi."},
+                    {n: "Thùy Linh", q: "Cảm ơn sự tận tâm chia sẻ của các anh em."},
+                    {n: "Kim Tuyến", q: "Biết ơn CLB vì tất cả những giá trị đã nhận được."},
+                    {n: "Duy Mạnh", q: "Vào nhóm học hỏi giúp tôi trưởng thành hơn rất nhiều."},
+                    {n: "Thanh Hà", q: "Cảm ơn vì ban quản trị đã luôn hỗ trợ tôi đêm ngày."},
+                    {n: "Hải Anh", q: "Mọi điều tốt đẹp nhất đều bắt đầu từ khi tôi vào đây."},
+                    {n: "Quốc Khánh", q: "Đội nhóm kéo an toàn, lệnh đi cực kỳ chuẩn chỉ."},
+                    {n: "Tấn Tài", q: "Tài lộc dồi dào từ ngày biết đi theo các ca kéo vốn."},
+                    {n: "Mạnh Hùng", q: "Phương pháp chơi quá khoa học, không hề có tính may rủi."},
+                    {n: "Khánh An", q: "Không còn áp lực nợ nần, ngủ ngon giấc mỗi tối."},
+                    {n: "Bình Minh", q: "Cảm ơn nhóm vì những bài học chia sẻ quý giá."},
+
+                    // HÀNG 6: tv(56) -> tv(60)
+                    {n: "Tú Quyên", q: "Vượt qua nghịch cảnh nhờ sự giúp đỡ vô điều kiện này."},
+                    {n: "Minh Tâm", q: "Nhóm đã giúp tôi tìm lại chính mình sau vấp ngã."},
+                    {n: "Hoàng Bách", q: "Lợi nhuận đều đặn mỗi ngày giúp cuộc sống dễ thở hơn."},
+                    {n: "Trọng Nghĩa", q: "Uy tín tạo nên thương hiệu 11 năm của Royal Club."},
+                    {n: "Ánh Dương", q: "Chân thành cảm ơn sự dẫn dắt tài tình của các Trưởng Nhóm."}
                 ];
 
-                for(let i=0; i<100; i++) {
-                    let m = data[i % 50];
+                // Vòng lặp nhân bản chạy 2 lượt (60x2 = 120 thẻ) để cuộn mượt mà liên tục không trống
+                for(let i=0; i<120; i++) {
+                    let m = data[i % 60];
                     document.write(`
                         <div class="luxury-card p-6 w-72 shrink-0 rounded-xl text-center border border-[#C5A059]">
-                            <img src="tv (${(i % 50) + 1}).jpg" class="w-20 h-20 rounded-full border-2 border-[#C5A059] mx-auto mb-4 object-cover">
+                            <img src="tv (${(i % 60) + 1}).jpg" class="w-20 h-20 rounded-full border-2 border-[#C5A059] mx-auto mb-4 object-cover">
                             <h4 class="font-bold text-lg mb-2">${m.n}</h4>
                             <p class="text-[#C5A059] text-sm italic">"${m.q}"</p>
                         </div>
@@ -127,8 +149,105 @@
 
     <!-- 4. FOOTER -->
     <footer class="py-12 text-center border-t border-[#333]">
-        <a href="https://t.me/your_telegram_link" class="bg-[#C5A059] text-black px-12 py-4 rounded-full font-bold hover:bg-white transition uppercase tracking-widest">Tham gia cộng đồng ngay</a>
+        <button onclick="openModal()" class="bg-[#C5A059] text-black px-12 py-4 rounded-full font-bold hover:bg-white transition uppercase tracking-widest cursor-pointer">
+            Tham gia cộng đồng ngay
+        </button>
     </footer>
+
+    <!-- 5. BẢNG FORM ĐĂNG KÝ VÀ CHỌN TELEGRAM (POPUP MODAL) -->
+    <div id="registerModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+        <div class="bg-[#111] p-8 rounded-2xl max-w-md w-full mx-4 border-2 border-[#C5A059] shadow-2xl relative">
+            
+            <!-- Nút đóng bảng -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl cursor-pointer">&times;</button>
+
+            <!-- BƯỚC 1: ĐIỀN THÔNG TIN KHI ẤN ĐĂNG KÝ -->
+            <div id="stepForm">
+                <h3 class="text-2xl font-bold gold-text text-center mb-2 uppercase tracking-wide">Đăng Ký Thành Viên</h3>
+                <p class="text-gray-400 text-sm text-center mb-6">Vui lòng điền thông tin để hệ thống kết nối với Ban Quản Trị</p>
+                
+                <form onsubmit="submitData(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-1">Họ và Tên:</label>
+                        <input type="text" id="fullname" required placeholder="Nhập tên của bạn..." class="w-full bg-[#1e1e1e] border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:border-[#C5A059]">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-1">Số Điện Thoại:</label>
+                        <input type="tel" id="phonenumber" required placeholder="Nhập số điện thoại..." class="w-full bg-[#1e1e1e] border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:border-[#C5A059]">
+                    </div>
+                    <button type="submit" class="w-full bg-[#C5A059] text-black font-bold p-3 rounded-lg hover:bg-white transition uppercase tracking-wider mt-4 cursor-pointer">
+                        Xác Nhận Đăng Ký
+                    </button>
+                </form>
+            </div>
+
+            <!-- BƯỚC 2: HIỆN 3 LINK TELEGRAM SAU KHI BẤM XÁC NHẬN -->
+            <div id="stepLinks" class="hidden">
+                <div class="text-center mb-6">
+                    <div class="w-12 h-12 bg-green-900/50 text-green-400 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">✓</div>
+                    <h3 class="text-2xl font-bold gold-text uppercase tracking-wide">Đăng Ký Thành Công</h3>
+                    <p class="text-gray-300 text-sm mt-1">Vui lòng chọn 1 trong các Trưởng Nhóm dưới đây để nhận hướng dẫn vào ca:</p>
+                </div>
+
+                <div class="space-y-3">
+                    <!-- Link 1: Khang Mini -->
+                    <a href="https://t.me/KHANGMINI369" target="_blank" class="flex flex-col items-center justify-center bg-gradient-to-r from-[#222] to-[#1a1a1a] border border-[#C5A059]/40 p-3 rounded-xl hover:border-[#C5A059] hover:bg-[#1a1a1a] transition">
+                        <span class="font-bold text-white text-base">KHANG MINI</span>
+                        <span class="text-xs text-gray-400">Bấm để liên hệ ngay</span>
+                    </a>
+
+                    <!-- Link 2: Thành Trưởng Nhóm -->
+                    <a href="https://t.me/ThanhconIT" target="_blank" class="flex flex-col items-center justify-center bg-gradient-to-r from-[#222] to-[#1a1a1a] border border-[#C5A059]/40 p-3 rounded-xl hover:border-[#C5A059] hover:bg-[#1a1a1a] transition">
+                        <span class="font-bold gold-text text-base">THÀNH ( TRƯỞNG NHÓM )</span>
+                        <span class="text-xs text-gray-400">Bấm để liên hệ ngay</span>
+                    </a>
+
+                    <!-- Link 3: Kiều Trinh -->
+                    <a href="https://t.me/KieutrinhLeader" target="_blank" class="flex flex-col items-center justify-center bg-gradient-to-r from-[#222] to-[#1a1a1a] border border-[#C5A059]/40 p-3 rounded-xl hover:border-[#C5A059] hover:bg-[#1a1a1a] transition">
+                        <span class="font-bold text-white text-base">KIỀU TRINH</span>
+                        <span class="text-xs text-gray-400">Bấm để liên hệ ngay</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT ĐIỀU KHIỂN LOGIC POPUP VÀ BẮN DATA -->
+    <script>
+        function openModal() {
+            document.getElementById('registerModal').classList.remove('hidden');
+            document.getElementById('stepForm').classList.remove('hidden');
+            document.getElementById('stepLinks').classList.add('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('registerModal').classList.add('hidden');
+        }
+
+        function submitData(e) {
+            e.preventDefault();
+            const name = document.getElementById('fullname').value;
+            const phone = document.getElementById('phonenumber').value;
+
+            // Cấu hình bắn thông tin về Bot Telegram của bạn
+            const TELEGRAM_BOT_TOKEN = 'ĐIỀN_TOKEN_BOT_VÀO_ĐÂY';
+            const TELEGRAM_CHAT_ID = 'ĐIỀN_ID_CHAT_VÀO_ĐÂY';
+            
+            if(TELEGRAM_BOT_TOKEN !== 'ĐIỀN_TOKEN_BOT_VÀO_ĐÂY') {
+                const message = `🔔 KHÁCH ĐĂNG KÝ MỚI:\n👤 Họ tên: ${name}\n📞 SĐT: ${phone}`;
+                fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: message })
+                });
+            }
+
+            // Chuyển sang Bước 2: Hiện 3 link Telegram
+            document.getElementById('stepForm').classList.add('hidden');
+            document.getElementById('stepLinks').classList.remove('hidden');
+        }
+    </script>
 
 </body>
 </html>
